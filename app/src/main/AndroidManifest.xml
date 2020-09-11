@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".PreviousOrderActivity"
+            android:label="@string/title_activity_previous_order"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".NewOrderActivity"
+            android:label="@string/title_activity_new_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".IndexActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
