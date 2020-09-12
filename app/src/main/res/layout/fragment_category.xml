@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.category.CategoryFragment">
+
+
+    <Button
+        android:id="@+id/flourOilFoodGrains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Flour, Oil and Food Grains"
+        app:layout_constraintBottom_toTopOf="@+id/biscuitsAndSnacks"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <Button
+        android:id="@+id/biscuitsAndSnacks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Biscuits and Snacks"
+        app:layout_constraintBottom_toTopOf="@+id/teaAndBeverages"
+        app:layout_constraintTop_toBottomOf="@+id/flourOilFoodGrains"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/teaAndBeverages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tea and Beverages"
+        app:layout_constraintBottom_toTopOf="@+id/detergentsAndCleaning"
+        app:layout_constraintTop_toBottomOf="@+id/biscuitsAndSnacks"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/detergentsAndCleaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Detergents and Cleaning"
+        app:layout_constraintBottom_toTopOf="@+id/soapsAndPersonalCare"
+        app:layout_constraintTop_toBottomOf="@+id/teaAndBeverages"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/soapsAndPersonalCare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Soaps and Personal Care"
+        app:layout_constraintBottom_toTopOf="@+id/noodlesPastaAndSauces"
+        app:layout_constraintTop_toBottomOf="@+id/detergentsAndCleaning"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/noodlesPastaAndSauces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Noodles, Pasta and Sauces"
+        app:layout_constraintBottom_toTopOf="@+id/spicesSaltAndSugar"
+        app:layout_constraintTop_toBottomOf="@+id/soapsAndPersonalCare"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/spicesSaltAndSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Spices, Salt and Sugar"
+        app:layout_constraintBottom_toTopOf="@+id/hygieneEssentials"
+        app:layout_constraintTop_toBottomOf="@+id/noodlesPastaAndSauces"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/hygieneEssentials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:text="Hygiene Essentials"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spicesSaltAndSugar"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
