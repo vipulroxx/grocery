@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <Button
+        android:id="@+id/wheat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Wheat"
+        app:layout_constraintBottom_toTopOf="@+id/atta"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <Button
+        android:id="@+id/atta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Atta"
+        app:layout_constraintBottom_toTopOf="@+id/besan"
+        app:layout_constraintTop_toBottomOf="@+id/wheat"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/besan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Besan"
+        app:layout_constraintBottom_toTopOf="@+id/sooji"
+        app:layout_constraintTop_toBottomOf="@+id/atta"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/sooji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sooji"
+        app:layout_constraintBottom_toTopOf="@+id/cornFlour"
+        app:layout_constraintTop_toBottomOf="@+id/besan"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/cornFlour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Corn Flour"
+        app:layout_constraintBottom_toTopOf="@+id/riceFlour"
+        app:layout_constraintTop_toBottomOf="@+id/sooji"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/riceFlour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Rice Flour"
+        app:layout_constraintBottom_toTopOf="@+id/maida"
+        app:layout_constraintTop_toBottomOf="@+id/cornFlour"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/maida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Maida"
+        app:layout_constraintBottom_toTopOf="@+id/ragiFlour"
+        app:layout_constraintTop_toBottomOf="@+id/riceFlour"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/ragiFlour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:text="Ragi Flour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maida"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
