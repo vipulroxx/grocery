@@ -32,7 +32,7 @@ public class flourOilFoodGrainsActivity extends AppCompatActivity {
                 fab.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(flourOilFoodGrainsActivity.this,PDFActivity.class));
+                        startActivity(new Intent(flourOilFoodGrainsActivity.this, FileActivity.class));
 
                     }
                 });

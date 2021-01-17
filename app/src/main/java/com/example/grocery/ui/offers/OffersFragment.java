@@ -23,13 +23,6 @@ public class OffersFragment extends Fragment {
         offersViewModel =
                 ViewModelProviders.of(this).get(OffersViewModel.class);
         View root = inflater.inflate(R.layout.fragment_offers, container, false);
-        final TextView textView = root.findViewById(R.id.text_offers);
-        offersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }

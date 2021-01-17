@@ -6,18 +6,251 @@
     android:layout_height="match_parent"
     tools:context=".ui.offers.OffersFragment">
 
-    <TextView
-        android:id="@+id/text_offers"
-        android:layout_width="match_parent"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_local_grocery_store_24"
+        />
+
+    <TextView
+        android:id="@+id/offerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginRight="143dp"
+        android:text="Discounts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/discountItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="65dp"
+        android:text="Wheat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offerList" />
+
+    <TextView
+        android:id="@+id/discount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="63dp"
+        android:text="Rs 10/Kilo"
+        app:layout_constraintStart_toEndOf="@+id/discountItem1"
+        app:layout_constraintTop_toBottomOf="@+id/offerList" />
+
+    <Button
+        android:id="@+id/discountItem1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:text="SELECT"
+        app:layout_constraintStart_toEndOf="@+id/discount1"
+        app:layout_constraintTop_toBottomOf="@+id/offerList" />
+
+    <TextView
+        android:id="@+id/discountItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="53dp"
+        android:text="Atta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem1" />
+
+    <TextView
+        android:id="@+id/discount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="55dp"
+        android:text="Rs 3/Kilo"
+        app:layout_constraintStart_toEndOf="@+id/discountItem2"
+        app:layout_constraintTop_toBottomOf="@+id/discount1" />
+
+    <Button
+        android:id="@+id/discountItem2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:text="SELECT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discount2"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem1Button" />
+
+    <Button
+        android:id="@+id/discountItem3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:text="SELECT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discount3"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem2Button" />
+
+    <Button
+        android:id="@+id/discountItem4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:text="SELECT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discount4"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem3Button" />
+
+    <TextView
+        android:id="@+id/discountItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="62dp"
+        android:text="Besan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem2" />
+
+    <TextView
+        android:id="@+id/discount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="63dp"
+        android:text="Rs 20/Kilo"
+        app:layout_constraintStart_toEndOf="@+id/discountItem3"
+        app:layout_constraintTop_toBottomOf="@+id/discount2" />
+
+    <TextView
+        android:id="@+id/discountItem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="54dp"
+        android:text="Sooji"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem3" />
+
+    <TextView
+        android:id="@+id/discount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="54dp"
+        android:text="Rs 3/Kilo"
+        app:layout_constraintStart_toEndOf="@+id/discountItem4"
+        app:layout_constraintTop_toBottomOf="@+id/discount3" />
+
+    <TextView
+        android:id="@+id/discountItem5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="60dp"
+        android:text="Corn Flour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem4" />
+
+    <TextView
+        android:id="@+id/discount5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="59dp"
+        android:text="Rs 5/Kilo"
+        app:layout_constraintStart_toEndOf="@+id/discountItem5"
+        app:layout_constraintTop_toBottomOf="@+id/discount4" />
+
+    <Button
+        android:id="@+id/discountItem5Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:text="SELECT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discount5"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem4Button" />
+
+    <TextView
+        android:id="@+id/discountItem6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="125dp"
+        android:text="Maida"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem5" />
+
+    <TextView
+        android:id="@+id/discount6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="124dp"
+        android:text="Rs 5/Kilo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discountItem6"
+        app:layout_constraintTop_toBottomOf="@+id/discount5" />
+
+    <Button
+        android:id="@+id/discountItem6Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="113dp"
+        android:text="SELECT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discount6"
+        app:layout_constraintTop_toBottomOf="@+id/discountItem5Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
