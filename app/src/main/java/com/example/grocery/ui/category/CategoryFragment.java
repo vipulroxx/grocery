@@ -5,15 +5,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Button;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.grocery.CategoryActivity;
 import com.example.grocery.R;
 import com.example.grocery.flourOilFoodGrainsActivity;
 
@@ -29,7 +25,7 @@ public class CategoryFragment extends Fragment {
         button = root.findViewById(R.id.flourOilFoodGrains);
 
         button.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), CategoryActivity.class);
+            Intent intent = new Intent(getActivity(), flourOilFoodGrainsActivity.class);
             startActivity(intent);
         });
 

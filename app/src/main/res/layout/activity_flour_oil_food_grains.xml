@@ -4,21 +4,418 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".flourOilFoodGrainsActivity">
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".flourOilFoodGrainsActivity"
+    tools:layout_editor_absoluteY="-44dp">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="117dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="50dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/itemsFlourOilFoodGrains"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Flour, Oil and Food Grains"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/wheat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/wheat"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="10dp"
+        android:text="Wheat"
+        app:layout_constraintBottom_toTopOf="@+id/atta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsFlourOilFoodGrains"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wheatPrice"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rs 120"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/wheat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsFlourOilFoodGrains"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/atta"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="10dp"
+        android:text="Atta"
+        app:layout_constraintBottom_toTopOf="@+id/besan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheat" />
+
+    <TextView
+        android:id="@+id/attaPrice"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rs 10"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/atta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheatPrice" />
+
+    <Button
+        android:id="@+id/besan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="10dp"
+        android:text="Besan"
+        app:layout_constraintBottom_toTopOf="@+id/sooji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atta" />
+
+    <TextView
+        android:id="@+id/besanPrice"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rs 109"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/besan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attaPrice" />
+
+    <Button
+        android:id="@+id/sooji"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sooji"
+        app:layout_constraintBottom_toTopOf="@+id/cornFlour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/besan" />
+
+    <TextView
+        android:id="@+id/soojiPrice"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rs 28"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/sooji"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/besanPrice" />
+
+    <Button
+        android:id="@+id/cornFlour"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="10dp"
+        android:text="Corn Flour"
+        app:layout_constraintBottom_toTopOf="@+id/riceFlour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sooji" />
+
+    <TextView
+        android:id="@+id/cornFlourPrice"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rs 45"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/cornFlour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soojiPrice" />
+
+    <Button
+        android:id="@+id/riceFlour"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="10dp"
+        android:text="Rice Flour"
+        app:layout_constraintBottom_toTopOf="@+id/maida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cornFlour" />
+
+    <TextView
+        android:id="@+id/riceFlourPrice"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rs 25"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/riceFlour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cornFlourPrice" />
+
+    <Button
+        android:id="@+id/maida"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="299dp"
+        android:text="Maida"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riceFlour" />
+
+    <TextView
+        android:id="@+id/maidaPrice"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Rs 65"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/maida"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/riceFlourPrice" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_local_grocery_store_24"
+        />
+
+    <Button
+        android:id="@+id/wheatPlus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="10dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wheatMinus"
+        app:layout_constraintTop_toBottomOf="@+id/itemsFlourOilFoodGrains"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/wheatMinus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="70dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/wheat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/attaMinus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/atta"
+        app:layout_constraintTop_toBottomOf="@+id/wheatMinus" />
+
+    <Button
+        android:id="@+id/attaPlus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/attaMinus"
+        app:layout_constraintTop_toBottomOf="@+id/wheatPlus" />
+
+    <Button
+        android:id="@+id/besanMinus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/besan"
+        app:layout_constraintTop_toBottomOf="@+id/attaMinus" />
+
+    <Button
+        android:id="@+id/besanPlus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/besanMinus"
+        app:layout_constraintTop_toBottomOf="@+id/attaPlus" />
+
+    <Button
+        android:id="@+id/soojiMinus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/sooji"
+        app:layout_constraintTop_toBottomOf="@+id/besanMinus" />
+
+    <Button
+        android:id="@+id/soojiPlus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/soojiMinus"
+        app:layout_constraintTop_toBottomOf="@+id/besanPlus" />
+
+    <Button
+        android:id="@+id/cornFlourMinus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/cornFlour"
+        app:layout_constraintTop_toBottomOf="@+id/soojiMinus" />
+
+    <Button
+        android:id="@+id/cornFlourPlus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/cornFlourMinus"
+        app:layout_constraintTop_toBottomOf="@+id/soojiPlus" />
+
+    <Button
+        android:id="@+id/riceFlourMinus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/riceFlour"
+        app:layout_constraintTop_toBottomOf="@+id/cornFlourMinus" />
+
+    <Button
+        android:id="@+id/riceFlourPlus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/riceFlourMinus"
+        app:layout_constraintTop_toBottomOf="@+id/cornFlourPlus" />
+
+    <Button
+        android:id="@+id/maidaMinus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/maida"
+        app:layout_constraintTop_toBottomOf="@+id/riceFlourMinus" />
+
+    <Button
+        android:id="@+id/maidaPlus"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/maidaMinus"
+        app:layout_constraintTop_toBottomOf="@+id/riceFlourPlus" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
